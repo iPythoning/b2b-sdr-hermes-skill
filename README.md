@@ -25,6 +25,11 @@
 hermes skills install github:iPythoning/b2b-sdr-hermes-skill
 ```
 
+For **Claude Code / Codex / Cursor** users (via [skills.sh](https://skills.sh)):
+```bash
+npx skills add iPythoning/b2b-sdr-hermes-skill
+```
+
 Or manually:
 ```bash
 cd ~/.hermes/skills
