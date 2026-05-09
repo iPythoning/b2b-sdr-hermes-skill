@@ -1,3 +1,10 @@
+## 2026-05-09T03:40:00Z — Drain run (no new release)
+- Latest stable: v2026.5.7 (unchanged — matches last-release; confirmed via github.com/NousResearch/hermes-agent/releases)
+- WeChat queue drain attempt for v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
+- WeChat queue drain attempt for v2026.5.7: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
+- Queue size: 2 (v2026.4.30, v2026.5.7 remain queued)
+- Action: no new release processed; queue retained for next retry
+
 ## 2026-05-07T11:34:43Z — Drain run (no new release)
 - Latest stable: v2026.4.30 (unchanged)
 - WeChat queue drain attempt for v2026.4.30: STILL FAILING — HTTP 403 Forbidden (appsecret 40125 outage persists)
