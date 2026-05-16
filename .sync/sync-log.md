@@ -1,3 +1,10 @@
+## 2026-05-16T07:44:00Z — Drain run (no new release)
+- Latest stable: v2026.5.7 (unchanged — matches last-release; confirmed via github.com/NousResearch/hermes-agent/releases.atom)
+- WeChat re-push v2026.4.30: REPUSH ERROR — WeChat token error 40125 invalid appsecret (rid: 6a081f1e-1d1fba97-0d25625b; outage persists)
+- WeChat re-push v2026.5.7: REPUSH ERROR — WeChat token error 40125 invalid appsecret (rid: 6a081f1e-731345d9-55020c1e; outage persists)
+- Queue size: 2 (v2026.4.30, v2026.5.7 remain queued)
+- Action: no new release; queue retained for next retry
+
 ## 2026-05-16T06:40:00Z — Drain run (no new release)
 - Latest stable: v2026.5.7 (unchanged — matches last-release; confirmed via github.com/NousResearch/hermes-agent/releases.atom)
 - WeChat re-push v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
