@@ -1,3 +1,13 @@
+## 2026-05-21T14:00:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (confirmed via github.com/NousResearch/hermes-agent/releases — no tag newer than v2026.5.16 exists)
+- WeChat re-push v2026.4.30: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban on execution env persists)
+- WeChat re-push v2026.5.7: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban on execution env persists)
+- WeChat re-push v2026.5.16: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban on execution env persists)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause confirmed: Cloudflare error 1010 — execution environment ASN blocked by pulseagent.io WAF
+- Action required: pulseagent.io operator must whitelist cloud execution env ASN or provide API proxy endpoint
+- Skill compat: no change (last-release v2026.5.16 unchanged)
+
 ## 2026-05-21T12:00:00Z — Drain run (no new release)
 - Latest stable: v2026.5.16 (unchanged — matches last-release)
 - WeChat re-push v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (outage persists)
