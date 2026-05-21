@@ -1,3 +1,22 @@
+## 2026-05-21T08:30:00Z — Synced Hermes v2026.5.16 (recovered from detached-HEAD loss)
+- Previous state: main was at v2026.5.7 — v2026.5.16 work existed only in detached HEAD and was lost
+- Categories: BREAKING=0 / RELEVANT=2 (LINE channel, gateway circuit breaker) / WATCH=3 / SKIP=rest
+- Skill compat: no change — SKILL.md Stage 10 already pre-annotated LINE for v2026.5.16+
+- Blog EN: HTTP 403 (pulseagent.io API outage — same as WeChat); drafts saved to .sync/blog-drafts/
+- Blog ZH: HTTP 403 (pulseagent.io API outage — same as WeChat); drafts saved to .sync/blog-drafts/
+- WeChat v2026.5.16: HTTP 403 (appsecret 40125 outage persists) — already in queue
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16)
+- Action: advanced last-release v2026.5.7 → v2026.5.16; blog+WeChat pending API recovery
+- Open question: pulseagent.io API returning 403 for both blog and WeChat — broader outage beyond appsecret 40125?
+
+## 2026-05-21T08:00:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (unchanged — matches last-release; confirmed via github.com/NousResearch/hermes-agent/releases)
+- WeChat re-push v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
+- WeChat re-push v2026.5.7: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
+- WeChat re-push v2026.5.16: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Action: no new release; queue retained for next retry
+
 ## 2026-05-21T00:00:00Z — Drain run (no new release)
 - Latest stable: v2026.5.16 (unchanged — matches last-release; confirmed via github.com/NousResearch/hermes-agent/releases)
 - WeChat re-push v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
