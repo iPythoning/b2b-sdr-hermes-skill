@@ -712,3 +712,16 @@
 - Root cause: Cloudflare error 1010 = execution environment ASN blocked by pulseagent.io WAF
 - Action required: pulseagent.io operator must whitelist cloud execution env ASN or provide API proxy
 - Skill compat: no change (last-release v2026.5.16 unchanged)
+
+## 2026-05-21T15:00:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (confirmed via github.com/NousResearch/hermes-agent/releases — Atom feed + releases page both show v0.14.0 as latest; no tag newer than v2026.5.16 exists)
+- WeChat re-push v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (Cloudflare 1010 ASN ban on execution env persists)
+- WeChat re-push v2026.5.7: REPUSH ERROR — HTTP 403 Forbidden (Cloudflare 1010 ASN ban on execution env persists)
+- WeChat re-push v2026.5.16: REPUSH ERROR — HTTP 403 Forbidden (Cloudflare 1010 ASN ban on execution env persists)
+- Blog re-publish v2026.4.30 en+zh: HTTP 403 Forbidden (same CF-1010 block)
+- Blog re-publish v2026.5.7 en+zh: HTTP 403 Forbidden (same CF-1010 block)
+- Blog re-publish v2026.5.16 en+zh: HTTP 403 Forbidden (same CF-1010 block)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause confirmed: Cloudflare error 1010 — execution environment ASN blocked by pulseagent.io WAF (persists since 2026-05-20)
+- Skill compat: no change (last-release v2026.5.16 unchanged; SKILL.md current)
+- Action required: pulseagent.io operator must whitelist cloud execution env ASN or provide API proxy endpoint
