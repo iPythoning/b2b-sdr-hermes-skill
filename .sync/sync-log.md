@@ -1,3 +1,14 @@
+## 2026-05-21T12:00:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (unchanged — matches last-release)
+- WeChat re-push v2026.4.30: REPUSH ERROR — HTTP 403 Forbidden (outage persists)
+- WeChat re-push v2026.5.7: REPUSH ERROR — HTTP 403 Forbidden (outage persists)
+- WeChat re-push v2026.5.16: REPUSH ERROR — HTTP 403 Forbidden (outage persists)
+- Blog re-publish v2026.4.30 en+zh: HTTP 403 (pulseagent.io API still down)
+- Blog re-publish v2026.5.16 en+zh: HTTP 403 (pulseagent.io API still down)
+- Fixed: .sync/blog-drafts/hermes-v2026.5.16-en.json was missing outer braces + slug — corrected in-place
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Action: no new release; queue retained for next retry; EN draft repaired
+
 ## 2026-05-21T08:30:00Z — Synced Hermes v2026.5.16 (recovered from detached-HEAD loss)
 - Previous state: main was at v2026.5.7 — v2026.5.16 work existed only in detached HEAD and was lost
 - Categories: BREAKING=0 / RELEVANT=2 (LINE channel, gateway circuit breaker) / WATCH=3 / SKIP=rest
