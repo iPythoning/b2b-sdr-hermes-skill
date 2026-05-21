@@ -685,3 +685,20 @@
 - WeChat re-push v2026.5.16: REPUSH ERROR — HTTP 403 Forbidden (appsecret 40125 outage persists)
 - Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
 - Action: no new release; queue retained for next retry
+
+## 2026-05-21T00:00:00Z — Drain run (no new release) + draft quality pass
+- Latest stable: v2026.5.16 (unchanged — matches last-release)
+- No new release to process
+- WeChat re-push v2026.4.30: HTTP 403 / Cloudflare 1010 (ASN ban on execution env)
+- WeChat re-push v2026.5.7: HTTP 403 / Cloudflare 1010 (ASN ban on execution env)
+- WeChat re-push v2026.5.16: HTTP 403 / Cloudflare 1010 (ASN ban on execution env)
+- Blog publish (all 6 drafts): HTTP 403 / Cloudflare 1010 (same block)
+- Draft quality fixes: expanded 3 underweight drafts to meet 800-word minimum
+  - hermes-v2026.5.7-en.json: 479 → 994 words (fully expanded all sections)
+  - hermes-v2026.5.7-zh.json: 229 → 1203 CJK chars (full rewrite from skeleton)
+  - hermes-v2026.4.30-zh.json: 450 → 1260 CJK chars (all sections filled out)
+  - Other 3 drafts already met minimum: v2026.4.30 en (993w), v2026.5.16 en (858w), v2026.5.16 zh (1130 CJK)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause: Cloudflare error 1010 = execution environment ASN blocked by pulseagent.io WAF
+- Action required: pulseagent.io operator must whitelist cloud execution env ASN or provide API proxy
+- Skill compat: no change (last-release v2026.5.16 unchanged)
