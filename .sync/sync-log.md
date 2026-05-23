@@ -808,3 +808,14 @@
 - Root cause: Cloudflare 1010 — execution env ASN blocked by pulseagent.io WAF (unchanged)
 - Action required: operator must whitelist cloud ASN or provide API proxy
 - Skill compat: no change
+
+## 2026-05-23T10:35:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (confirmed via WebFetch — no tag newer than v2026.5.16 exists)
+- Detached HEAD recovery: fast-forward merged 13 orphaned commits (blog draft fixes + drain runs) onto main
+- WeChat re-push v2026.4.30: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- WeChat re-push v2026.5.7: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- WeChat re-push v2026.5.16: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause: Cloudflare 1010 — execution env ASN blocked by pulseagent.io WAF (ongoing)
+- Action required: operator must whitelist cloud ASN or provide API proxy for WeChat + Blog APIs
+- Skill compat: no change
