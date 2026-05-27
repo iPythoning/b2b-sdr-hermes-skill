@@ -1,3 +1,14 @@
+## 2026-05-27T14:39:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (confirmed via github.com/NousResearch/hermes-agent/releases; no newer stable tag)
+- WeChat re-push v2026.4.30: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- WeChat re-push v2026.5.7: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- WeChat re-push v2026.5.16: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause: Cloudflare 1010 — execution env ASN blocked by pulseagent.io WAF (persistent)
+- Action required: operator must whitelist cloud ASN or provide API proxy for WeChat endpoint
+- Skill compat: no change
+- Repo note: previous drain-run commits were in detached HEAD (now abandoned); main advanced cleanly
+
 ## 2026-05-27T13:45:00Z — Drain run (no new release)
 - Latest stable: v2026.5.16 (confirmed via github.com/NousResearch/hermes-agent/releases; no newer stable tag as of 2026-05-27)
 - WeChat re-push v2026.4.30: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
@@ -213,6 +224,7 @@
 - Fixed: .sync/blog-drafts/hermes-v2026.5.16-en.json was missing outer braces + slug — corrected in-place
 - Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
 - Action: no new release; queue retained for next retry; EN draft repaired
+
 
 ## 2026-05-21T08:30:00Z — Synced Hermes v2026.5.16 (recovered from detached-HEAD loss)
 - Previous state: main was at v2026.5.7 — v2026.5.16 work existed only in detached HEAD and was lost
