@@ -1,3 +1,13 @@
+## 2026-05-27T08:30:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (v0.14.0 "Foundation Release" — confirmed via github.com/NousResearch/hermes-agent/releases; no tag newer than v2026.5.16 as of 2026-05-27)
+- WeChat re-push v2026.4.30: REPUSH HTTP ERROR — 403 Cloudflare 1010 (ASN ban persists)
+- WeChat re-push v2026.5.7: REPUSH HTTP ERROR — 403 Cloudflare 1010 (ASN ban persists)
+- WeChat re-push v2026.5.16: REPUSH HTTP ERROR — 403 Cloudflare 1010 (ASN ban persists)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause: Cloudflare 1010 — execution env ASN blocked by pulseagent.io WAF (unchanged)
+- Action required: operator must whitelist cloud ASN or provide API proxy
+- Skill compat: no change
+
 ## 2026-05-27T07:39:00Z — Drain run (no new release)
 - Latest stable: v2026.5.16 (v0.14.0 "Foundation Release" — confirmed via github.com/NousResearch/hermes-agent/releases; no tag newer than v2026.5.16 as of 2026-05-27)
 - WeChat re-push v2026.4.30: STILL_FAILING — WeChat API error 40125 invalid appsecret (operator-noted 2026-05 outage)
