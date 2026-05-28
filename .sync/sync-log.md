@@ -1161,3 +1161,14 @@
 - Action required: operator must whitelist cloud ASN or provide API proxy for WeChat endpoint
 - Skill compat: no change
 - New release: none
+
+## 2026-05-28T13:40:00Z — Drain run (no new release)
+- Latest stable: v2026.5.16 (confirmed via WebFetch github.com/NousResearch/hermes-agent/releases)
+- WeChat re-push v2026.4.30: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- WeChat re-push v2026.5.7: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- WeChat re-push v2026.5.16: REPUSH_ERROR — HTTP 403 Forbidden (Cloudflare ASN ban persists)
+- Queue size: 3 (v2026.4.30, v2026.5.7, v2026.5.16 remain queued)
+- Root cause: Cloudflare 1010 — execution env ASN blocked by pulseagent.io WAF (persistent)
+- Action required: operator must whitelist cloud ASN or provide API proxy for WeChat endpoint
+- Skill compat: no change
+- New release: none
