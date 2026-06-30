@@ -1,0 +1,17 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "groupings": [
+    {
+      "title": "Sales Development",
+      "skills": [
+        "b2b-sdr-agent"
+      ]
+    },
+    {
+      "title": "Social Signal Research",
+      "skills": [
+        "hermes-tweet"
+      ]
+    }
+  ]
+}

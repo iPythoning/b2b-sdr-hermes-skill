@@ -10,6 +10,7 @@
 | Stage | Action | Channel |
 |-------|--------|---------|
 | Lead Discovery | Web search for potential buyers in target markets | Automated |
+| Social Signal Research | X/Twitter account, keyword, trend, and competitor monitoring through Hermes Tweet | X/Twitter |
 | Lead Capture | Auto-create CRM records from inbound messages | WhatsApp / Email / Telegram |
 | BANT Qualification | Score leads through natural conversation | WhatsApp / Telegram |
 | Research & Enrichment | Company background, decision-maker identification | Web search |
@@ -28,6 +29,12 @@ hermes skills install github:iPythoning/b2b-sdr-hermes-skill
 For **Claude Code / Codex / Cursor** users (via [skills.sh](https://skills.sh)):
 ```bash
 npx skills add iPythoning/b2b-sdr-hermes-skill
+```
+
+Optional companion skill:
+
+```bash
+cp -r hermes-tweet ~/.hermes/skills/
 ```
 
 Or manually:
